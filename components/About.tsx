@@ -1,0 +1,57 @@
+export default function About() {
+  return (
+    <section id="about" className="section-container bg-white">
+      <h2 className="section-title">
+        About <span className="gradient-text">Me</span>
+      </h2>
+      <div className="max-w-4xl mx-auto">
+        <div className="flex flex-col md:flex-row gap-8 items-center">
+          <div className="flex-shrink-0">
+            <div className="w-48 h-48 rounded-full overflow-hidden shadow-xl ring-4 ring-sacramento-100">
+              <img
+                src="/images/headshot.jpg"
+                alt="Leonardo Zavala-Jimenez"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+          <div className="flex-1 text-center md:text-left">
+            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              I'm passionate about <span className="font-semibold text-sacramento-700">Data Analysis</span>,{' '}
+              <span className="font-semibold text-sacramento-700">Machine Learning</span>,{' '}
+              <span className="font-semibold text-sacramento-700">Software Engineering</span>, and{' '}
+              <span className="font-semibold text-sacramento-700">AI</span>.
+            </p>
+            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              As a Computer Science and Statistics student at UC Davis (2026), I'm constantly exploring
+              the intersection of software, hardware, and intelligent systems. I love building
+              projects that solve real-world problems and push the boundaries of what's possible
+              with technology.
+            </p>
+            <div className="flex flex-wrap gap-3 justify-center md:justify-start">
+              <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
+                Python
+              </span>
+              <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
+                React
+              </span>
+              <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
+                TypeScript
+              </span>
+              <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
+                Rust
+              </span>
+              <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
+                Machine Learning
+              </span>
+              <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
+                Data Analysis
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  )
+}
+

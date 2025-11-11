@@ -1,0 +1,43 @@
+[
+  {
+    "id": 1,
+    "title": "MuscleMax Startup",
+    "description": "Leading development of a React Native app integrated with a custom EMG device. Collaborating with a 5-person cross-functional team to design and implement backend architecture for real-time muscle activity tracking.",
+    "tech": ["React Native", "TypeScript", "SQLite", "Node.js", "EMG Hardware"],
+    "github": "https://github.com/Lumiho",
+    "image": "/images/musclemax.jpg",
+    "featured": true,
+    "period": "Jan 2025 - Present"
+  },
+  {
+    "id": 2,
+    "title": "Data Blog",
+    "description": "Conducting end-to-end data analysis using Python (Pandas, Seaborn, Tableau). Performing data cleaning, EDA, and model selection on public datasets. Publishing analyses demonstrating real-world insights in data science.",
+    "tech": ["Python", "Pandas", "Seaborn", "Tableau", "Data Analysis"],
+    "website": "https://data-analysis-blog.vercel.app/",
+    "image": "/images/data-blog.jpg",
+    "featured": true,
+    "period": "Mar 2025 - Present"
+  },
+  {
+    "id": 3,
+    "title": "GitHub Data Fetcher",
+    "description": "Developed a Rust CLI tool that interacts with the GitHub REST API to retrieve repository and issue metadata. Stored structured JSON objects in Redis for fast retrieval and caching, improving query efficiency and reducing API calls by 80%.",
+    "tech": ["Rust", "Redis", "REST API", "Asynchronous Programming"],
+    "github": "https://github.com/Lumiho",
+    "image": "/images/github-fetcher.jpg",
+    "featured": true,
+    "period": "Sept 2025 - Nov 2025"
+  },
+  {
+    "id": 4,
+    "title": "Top Garden Landscaping & Design",
+    "description": "Built and deployed a responsive client website using React and Tailwind CSS. Improved client visibility and customer inquiries by 40% through optimized design. Applied agile communication and design iteration.",
+    "tech": ["React", "Tailwind CSS", "Front-End Development"],
+    "website": "https://tgld.org",
+    "image": "/images/top-garden.jpg",
+    "featured": true,
+    "period": "Dec 2024 - Apr 2025"
+  }
+]
+

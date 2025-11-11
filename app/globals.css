@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900;
+    position: relative;
+  }
+  
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: 100%;
+    background: repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 48px,
+      rgba(4, 57, 39, 0.15) 48px,
+      rgba(4, 57, 39, 0.15) 50px
+    );
+    pointer-events: none;
+    z-index: 0;
+  }
+  
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      rgba(4, 57, 39, 0.35) 15%,
+      rgba(4, 57, 39, 0.35) 85%,
+      transparent 100%
+    );
+    pointer-events: none;
+    z-index: 0;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20;
+  }
+  
+  .section-title {
+    @apply text-3xl sm:text-4xl font-bold text-gray-900 mb-8 text-center;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-sacramento-700 to-sacramento-500 bg-clip-text text-transparent;
+  }
+  
+  .scroll-dot-1 {
+    animation-delay: 0s;
+  }
+  
+  .scroll-dot-2 {
+    animation-delay: 0.2s;
+  }
+  
+  .scroll-dot-3 {
+    animation-delay: 0.4s;
+  }
+}
+

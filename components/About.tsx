@@ -18,15 +18,18 @@ export default function About() {
           <div className="flex-1 text-center md:text-left">
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               I'm passionate about <span className="font-semibold text-sacramento-700">Data Analysis</span>,{' '}
-              <span className="font-semibold text-sacramento-700">Machine Learning</span>,{' '}
+              <span className="font-semibold text-sacramento-700">Machine Learning/AI</span>,{' '}
               <span className="font-semibold text-sacramento-700">Software Engineering</span>, and{' '}
-              <span className="font-semibold text-sacramento-700">AI</span>.
+              <span className="font-semibold text-sacramento-700">Neurotechnology</span>.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               As a Computer Science and Statistics student at UC Davis (2026), I'm constantly exploring
               the intersection of software, hardware, and intelligent systems. I love building
-              projects that solve real-world problems and push the boundaries of what's possible
+              projects that solve real-world problems and discovering what's possible
               with technology.
+            </p>
+            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+              <b>Fun Facts:</b> I love music, gardening, playing sports and games.
             </p>
             <div className="flex flex-wrap gap-3 justify-center md:justify-start">
               <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">

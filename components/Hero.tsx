@@ -8,12 +8,13 @@ export default function Hero() {
     >
       <div className="section-container text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6">
+          <h1 className="text-5xl sm:text-6xl lg:text-6xl font-bold mb-6">
             Hi, I'm{' '}
-            <span className="gradient-text">Leo Zavala</span>
+            <span className="gradient-text">Leo
+              Zavala-Jimenez</span>
           </h1>
           <p className="text-xl sm:text-2xl text-gray-700 mb-4">
-            UC Davis CS + Statistics student • 2026
+            UC Davis CS + Statistics Student • 2026
           </p>
           <p className="text-lg sm:text-xl text-gray-600 mb-8 max-w-2xl mx-auto">
             I build intelligent systems that connect AI, data, and hardware.

@@ -29,7 +29,7 @@ export default function About() {
               with technology.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              <b>Additional Background</b>: I've struggled with severe anxiety, which led me to start as a Neurology major but later discovered my passion for coding in an effort to one day create programs/devices that could help others; especil
+              <b>Additional Background</b>: I've struggled with severe anxiety, which led me to start as a Neurology major but later discovered my passion for coding in an effort to one day create programs/devices that could help others; especially health/neurology related issues.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               <b>Fun Facts:</b> I love music, gardening, playing sports and games.

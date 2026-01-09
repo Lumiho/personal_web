@@ -64,7 +64,7 @@ export default function Contact() {
         </div>
         <div className="mt-8">
           <a
-            href="/Resume2025_Zavala-Jimenez, Leonardo.pdf"
+            href="/Resume2026_Zavala-Jimenez, Leonardo.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center px-8 py-3 bg-sacramento-700 text-white rounded-lg font-semibold hover:bg-sacramento-800 transition-colors shadow-lg hover:shadow-xl"

@@ -2,7 +2,7 @@ const experiences = [
   {
     title: 'ColorStack @ UC Davis',
     role: 'National Outreach Lead / Project Manager',
-    description: 'Represent UC Davis in national ColorStack meetings; maintain documentation and reporting. Planned events increasing membership by 30%, supporting underrepresented students in tech. Oversaw website creation and GitHub repository, improving members\' technical collaboration skills.',
+    description: 'Represent UC Davis in national ColorStack meetings; maintain documentation and reporting. Planned events increasing membership by 30%, supporting underrepresented students in tech. Overseeing website creation progress & GitHub repository, improving members\' technical collaboration.',
     period: 'Dec 2023 - Present',
     highlights: [
       'National representation & documentation',
@@ -11,25 +11,14 @@ const experiences = [
     ],
   },
   {
-    title: 'Computer Science Tutoring Club @ UC Davis',
-    role: 'Tutor',
-    description: 'Held weekly tutoring sessions for UC Davis students in computer science and statistics. Helped students strengthen their problem-solving, debugging, and analytical skills.',
-    period: 'Oct 2023 - Dec 2024',
-    highlights: [
-      'Computer Science & Statistics tutoring',
-      'Problem-solving & debugging support',
-      'Student mentorship',
-    ],
-  },
-  {
     title: 'ASUCD Campus Center for the Environment',
     role: 'Groundskeeper',
-    description: 'Maintain and enhance garden spaces surrounding the UC Davis Campus Center for the Environment. Support sustainable landscaping initiatives in coordination with ASUCD staff. Operate and maintain tools and equipment for daily groundskeeping tasks.',
-    period: 'Jul 2024 - Present',
+    description: 'Maintain and enhance campus garden spaces, ensuring safe, sustainable, and visually appealing environments for students and visitors. Coordinate with ASUCD staff to implement environmentally conscious landscaping practices. Engage with clients and stakeholders to resolve concerns, provide recommendations, and support project execution.',
+    period: 'Aug 2025 - Present',
     highlights: [
-      'Garden maintenance & enhancement',
+      'Campus garden maintenance & enhancement',
       'Sustainable landscaping initiatives',
-      'Equipment operation & maintenance',
+      'Client & stakeholder engagement',
     ],
   },
 ]

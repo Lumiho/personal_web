@@ -23,7 +23,7 @@ const socialLinks = [
   },
   {
     name: 'Email',
-    url: 'mailto:lzavalajimenez@ucdavis.edu',
+    url: 'mailto:zavalaleo715@yahoo.com',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path

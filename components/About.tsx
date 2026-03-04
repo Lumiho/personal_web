@@ -41,7 +41,16 @@ export default function About() {
                 Python
               </span>
               <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
-                React
+                R
+              </span>
+              <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
+                Java
+              </span>
+              <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
+                JavaScript
+              </span>
+              <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
+                C/C++
               </span>
               <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
                 TypeScript
@@ -50,7 +59,19 @@ export default function About() {
                 Rust
               </span>
               <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
-                C/C++
+                Haskell
+              </span>
+              <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
+                React
+              </span>
+              <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
+                Node.js
+              </span>
+              <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
+                SQL/SQLite
+              </span>
+              <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
+                Tailwind CSS
               </span>
               <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
                 Machine Learning

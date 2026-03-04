@@ -4,7 +4,7 @@
     "title": "UC Davis Internal Medicine Funding System",
     "description": "Architecting and developing a Next.js + TypeScript funding workflow system projected to save 250+ hours annually by digitizing 500+ departmental submissions. Designed relational data models using Prisma ORM to manage funding requests, approval states, and revision history with end-to-end type safety. Implemented secure, tokenized email-based approval system via Resend.",
     "tech": ["Next.js", "TypeScript", "Prisma ORM", "Resend", "React"],
-    "website": "https://funding-slip-deploy.vercel.app/",
+    "status": "In Progress",
     "image": "/images/uc-davis-internal-medicine.jpg",
     "featured": true,
     "period": "Jan 2026 - Present"

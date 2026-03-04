@@ -7,6 +7,7 @@ interface Project {
   tech: string[]
   github?: string
   website?: string
+  status?: string
   image: string
   featured: boolean
   period?: string
@@ -99,6 +100,10 @@ export default function Projects() {
                     />
                   </svg>
                 </a>
+              ) : project.status ? (
+                <span className="inline-flex items-center text-sacramento-600 font-semibold">
+                  {project.status}
+                </span>
               ) : null}
             </div>
           </div>

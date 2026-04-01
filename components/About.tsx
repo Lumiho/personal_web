@@ -27,11 +27,8 @@ export default function About() {
               the intersection of software, hardware, and intelligent systems. I love building
               projects that solve real-world problems and discovering what's possible
               with technology.
-              <br></br>
+              <br />
               <b>Personal Background</b>: I've struggled with severe anxiety, which led me to start as a Neurology major but later discovered my passion for coding in an effort to one day create programs/devices that could help others; especially health/neurology related issues.
-            </p>
-            <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               <b>Fun Facts:</b> I love music, gardening, playing sports and games.
@@ -56,10 +53,13 @@ export default function About() {
                 TypeScript
               </span>
               <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
+                Haskell
+              </span>
+              <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
                 Rust
               </span>
               <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
-                Haskell
+                Swift
               </span>
               <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
                 React
@@ -72,6 +72,15 @@ export default function About() {
               </span>
               <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
                 Tailwind CSS
+              </span>
+              <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
+                Prisma ORM
+              </span>
+              <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
+                MongoDB
+              </span>
+              <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
+                Tableau
               </span>
               <span className="px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-full text-sm font-medium">
                 Machine Learning

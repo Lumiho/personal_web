@@ -2,8 +2,8 @@
   {
     "id": 1,
     "title": "UC Davis Internal Medicine Funding System",
-    "description": "Architecting and developing a Next.js + TypeScript funding workflow system projected to save 250+ hours annually by digitizing 500+ departmental submissions. Designed relational data models using Prisma ORM to manage funding requests, approval states, and revision history with end-to-end type safety. Implemented secure, tokenized email-based approval system via Resend.",
-    "tech": ["Next.js", "TypeScript", "Prisma ORM", "Resend", "React"],
+    "description": "Architecting a full-stack funding workflow platform projected to eliminate 250+ hours of manual processing annually by digitizing 500+ departmental submissions. Engineered relational data models with Prisma ORM and MongoDB to manage funding requests, multi-stage approval states, and full revision history with end-to-end type safety. Built a tokenized, email-based approval system via Resend, enabling asynchronous multi-reviewer workflows. Enforced strict runtime data validation using Zod schemas.",
+    "tech": ["Next.js", "TypeScript", "Prisma ORM", "MongoDB", "Resend", "Zod"],
     "status": "In Progress",
     "image": "/images/uc-davis-internal-medicine.jpg",
     "featured": true,
@@ -22,8 +22,8 @@
   {
     "id": 3,
     "title": "MuscleMax Startup",
-    "description": "Leading development of a React Native app integrated with a custom EMG device using React Native, TypeScript, SQLite, and Node.js. Collaborating with a 5-person cross-functional team (software, hardware, business). Designed and implemented backend architecture for real-time muscle activity tracking and live graphing.",
-    "tech": ["React Native", "TypeScript", "SQLite", "Node.js", "EMG Hardware"],
+    "description": "Spearheading development of a cross-platform fitness app integrating a custom EMG device to deliver real-time muscle activity insights. Designed and implemented a BLE communication layer using react-native-ble-plx, enabling low-latency data streaming from proprietary hardware. Architected a real-time data pipeline with SQLite and Node.js to support live EMG signal graphing and persistent session history. Directing a 5-person cross-functional team across software, hardware, and business.",
+    "tech": ["React Native", "TypeScript", "SQLite", "Node.js", "BLE", "EMG Hardware"],
     "github": "https://github.com/Lumiho",
     "image": "/images/musclemax.jpg",
     "featured": true,
@@ -32,8 +32,8 @@
   {
     "id": 4,
     "title": "GitHub Data Fetcher",
-    "description": "Developed a Rust CLI tool that interacts with the GitHub REST API to retrieve repository and issue metadata. Stored structured JSON objects in Redis for fast retrieval and caching, improving query efficiency and reducing API calls by 80%. Applied asynchronous programming, error handling, and modular design to build a reliable and efficient backend data pipeline.",
-    "tech": ["Rust", "Redis", "REST API", "Asynchronous Programming"],
+    "description": "Developed a Rust CLI tool that interacts with the GitHub REST API to retrieve repository and issue metadata, using SOLID principles in the architecture. Stored structured JSON objects in Redis for fast retrieval and caching, improving query efficiency and reducing API calls by 80%. Applied asynchronous programming, error handling, and modular design to build a reliable and efficient backend data pipeline.",
+    "tech": ["Rust", "Redis", "REST API", "SOLID Principles"],
     "github": "https://github.com/Lumiho",
     "image": "/images/github-fetcher.jpg",
     "featured": true,

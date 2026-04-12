@@ -6,72 +6,151 @@
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
     @apply bg-gray-50 text-gray-900;
     position: relative;
-  }
-  
-  body::before {
-    content: '';
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 30%;
-    height: 100%;
-    background: repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 48px,
-      rgba(4, 57, 39, 0.15) 48px,
-      rgba(4, 57, 39, 0.15) 50px
-    );
-    pointer-events: none;
-    z-index: 0;
-  }
-  
-  body::after {
-    content: '';
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 3px;
-    height: 100%;
-    background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgba(4, 57, 39, 0.35) 15%,
-      rgba(4, 57, 39, 0.35) 85%,
-      transparent 100%
-    );
-    pointer-events: none;
-    z-index: 0;
   }
 }
 
 @layer components {
   .section-container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24;
   }
-  
+
   .section-title {
-    @apply text-3xl sm:text-4xl font-bold text-gray-900 mb-8 text-center;
+    @apply text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 text-center;
   }
-  
+
   .gradient-text {
     @apply bg-gradient-to-r from-sacramento-700 to-sacramento-500 bg-clip-text text-transparent;
   }
-  
-  .scroll-dot-1 {
-    animation-delay: 0s;
-  }
-  
-  .scroll-dot-2 {
-    animation-delay: 0.2s;
-  }
-  
-  .scroll-dot-3 {
-    animation-delay: 0.4s;
+
+  /* Grid pattern for backgrounds */
+  .bg-grid-pattern {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
   }
 }
 
+@layer utilities {
+  /* Floating animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: float 8s ease-in-out infinite;
+    animation-delay: 2s;
+  }
+
+  /* Gradient animation */
+  @keyframes gradient {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 4s ease infinite;
+  }
+
+  /* Blink animation for cursor */
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .animate-blink {
+    animation: blink 1s step-end infinite;
+  }
+
+  /* Scroll down indicator animation */
+  @keyframes scroll-down {
+    0% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(8px);
+    }
+  }
+
+  .animate-scroll-down {
+    animation: scroll-down 1.5s ease-in-out infinite;
+  }
+
+  /* Scroll dots animation */
+  .scroll-dot-1 {
+    animation-delay: 0s;
+  }
+
+  .scroll-dot-2 {
+    animation-delay: 0.2s;
+  }
+
+  .scroll-dot-3 {
+    animation-delay: 0.4s;
+  }
+
+  /* Line clamp utilities */
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Prose styles for About section */
+  .prose p {
+    @apply mb-4;
+  }
+
+  .prose p:last-child {
+    @apply mb-0;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(65, 165, 130, 0.2);
+  color: inherit;
+}

@@ -1,7 +1,10 @@
+'use client'
+
 const socialLinks = [
   {
     name: 'GitHub',
     url: 'https://github.com/Lumiho',
+    description: 'Check out my code',
     icon: (
       <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
         <path
@@ -11,19 +14,23 @@ const socialLinks = [
         />
       </svg>
     ),
+    color: 'hover:bg-gray-900 hover:text-white',
   },
   {
     name: 'LinkedIn',
     url: 'https://www.linkedin.com/in/leonardo-zavala-jimenez-651801210/',
+    description: 'Connect with me',
     icon: (
       <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
         <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
       </svg>
     ),
+    color: 'hover:bg-[#0077B5] hover:text-white',
   },
   {
     name: 'Email',
     url: 'mailto:zavalaleo715@yahoo.com',
+    description: 'Send me a message',
     icon: (
       <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path
@@ -34,59 +41,81 @@ const socialLinks = [
         />
       </svg>
     ),
+    color: 'hover:bg-sacramento-700 hover:text-white',
   },
 ]
 
 export default function Contact() {
   return (
-    <section id="contact" className="section-container bg-gradient-to-br from-sacramento-50 to-white">
-      <h2 className="section-title">
-        Get In <span className="gradient-text">Touch</span>
-      </h2>
-      <div className="max-w-2xl mx-auto text-center">
-        <p className="text-lg text-gray-700 mb-8 leading-relaxed">
-          I'm always open to discussing new projects, creative ideas, or opportunities
-          to be part of your vision. Feel free to reach out!
-        </p>
-        <div className="flex flex-wrap justify-center gap-6 mb-8">
-          {socialLinks.map((link) => (
+    <section id="contact" className="relative overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 bg-gradient-to-br from-sacramento-900 via-sacramento-800 to-sacramento-900" />
+
+      {/* Decorative elements */}
+      <div className="absolute top-0 left-0 w-96 h-96 bg-sacramento-500/20 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2" />
+      <div className="absolute bottom-0 right-0 w-80 h-80 bg-primary-500/10 rounded-full blur-3xl translate-x-1/3 translate-y-1/3" />
+
+      <div className="section-container relative z-10">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+            Let's Build Something <span className="text-transparent bg-clip-text bg-gradient-to-r from-sacramento-300 to-primary-300">Together</span>
+          </h2>
+          <p className="text-lg text-sacramento-200 mb-12 max-w-2xl mx-auto leading-relaxed">
+            I'm always excited to discuss new projects, creative ideas, or opportunities to collaborate.
+            Whether you have a question or just want to say hi, feel free to reach out!
+          </p>
+
+          {/* Social Links Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-12">
+            {socialLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.url}
+                target={link.name === 'Email' ? undefined : '_blank'}
+                rel={link.name === 'Email' ? undefined : 'noopener noreferrer'}
+                className={`group flex flex-col items-center gap-3 p-6 bg-white/10 backdrop-blur-sm rounded-2xl border border-white/10 transition-all duration-300 ${link.color} hover:scale-105 hover:border-white/30`}
+              >
+                <div className="w-14 h-14 bg-white/10 rounded-xl flex items-center justify-center text-white group-hover:bg-white/20 transition-colors">
+                  {link.icon}
+                </div>
+                <div>
+                  <h3 className="font-semibold text-white">{link.name}</h3>
+                  <p className="text-sm text-sacramento-300 group-hover:text-white/80 transition-colors">{link.description}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+
+          {/* Resume Download */}
+          <div className="inline-flex flex-col items-center">
+            <p className="text-sacramento-300 text-sm mb-4">Want to know more about my background?</p>
             <a
-              key={link.name}
-              href={link.url}
-              target={link.name === 'Email' ? undefined : '_blank'}
-              rel={link.name === 'Email' ? undefined : 'noopener noreferrer'}
-              className="flex items-center gap-3 px-6 py-3 bg-white rounded-lg shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105 text-gray-700 hover:text-sacramento-700"
+              href="/Resume2026_Zavala-Jimenez, Leonardo.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group inline-flex items-center gap-3 px-8 py-4 bg-white text-sacramento-800 rounded-xl font-semibold hover:bg-sacramento-50 transition-all duration-300 shadow-lg hover:shadow-2xl hover:scale-105"
             >
-              <span className="text-sacramento-700">{link.icon}</span>
-              <span className="font-semibold">{link.name}</span>
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+              </svg>
+              Download Resume
+              <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
             </a>
-          ))}
-        </div>
-        <div className="mt-8">
-          <a
-            href="/Resume2026_Zavala-Jimenez, Leonardo.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center px-8 py-3 bg-sacramento-700 text-white rounded-lg font-semibold hover:bg-sacramento-800 transition-colors shadow-lg hover:shadow-xl"
-          >
-            Download Resume
-            <svg
-              className="w-5 h-5 ml-2"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-              />
-            </svg>
-          </a>
+          </div>
+
+          {/* Footer */}
+          <div className="mt-16 pt-8 border-t border-white/10">
+            <p className="text-sacramento-400 text-sm">
+              Designed & Built by Leo Zavala-Jimenez
+            </p>
+            <p className="text-sacramento-500 text-xs mt-2">
+              © {new Date().getFullYear()} All rights reserved.
+            </p>
+          </div>
         </div>
       </div>
     </section>
   )
 }
-

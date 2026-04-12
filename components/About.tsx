@@ -4,7 +4,7 @@ const skills = {
   languages: ['Python', 'TypeScript', 'JavaScript', 'Java', 'C/C++', 'Rust', 'Swift', 'R', 'Haskell'],
   frameworks: ['React', 'Next.js', 'Node.js', 'SwiftUI', 'React Native'],
   tools: ['SQL/SQLite', 'MongoDB', 'Prisma ORM', 'Tailwind CSS', 'Git', 'Tableau'],
-  areas: ['Machine Learning', 'Data Analysis', 'Full-Stack Development', 'iOS Development'],
+  areas: ['Machine Learning', 'Data Analysis', 'Full-Stack Development', 'Mobile Development'],
 }
 
 const interests = [

@@ -37,6 +37,7 @@ const categoryColors: Record<string, string> = {
 export default function Projects() {
   const projects: Project[] = projectsData as Project[]
   const [hoveredProject, setHoveredProject] = useState<number | null>(null)
+  const [expandedProject, setExpandedProject] = useState<number | null>(null)
 
   return (
     <section id="projects" className="section-container bg-gray-50 relative">
@@ -51,42 +52,38 @@ export default function Projects() {
           A collection of projects I've built, from full-stack web applications to mobile apps and CLI tools.
         </p>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto items-start">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 hover:border-sacramento-200"
+              className="group bg-white rounded-2xl shadow-sm hover:shadow-2xl transition-all duration-500 overflow-hidden border border-gray-100 hover:border-sacramento-200 flex flex-col"
               onMouseEnter={() => setHoveredProject(project.id)}
               onMouseLeave={() => setHoveredProject(null)}
             >
-              {/* Project header with gradient */}
-              <div className="relative h-48 bg-gradient-to-br from-sacramento-600 via-sacramento-700 to-sacramento-800 overflow-hidden">
-                {/* Animated background pattern */}
-                <div className="absolute inset-0 opacity-10">
-                  <div className="absolute inset-0 bg-grid-pattern" />
-                </div>
+              {/* Project header with image or gradient */}
+              <div className="relative h-48 flex-shrink-0 bg-gradient-to-br from-sacramento-600 via-sacramento-700 to-sacramento-800 overflow-hidden">
+                {/* Project image */}
+                {project.image && (
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className={`absolute inset-0 w-full h-full object-cover transition-transform duration-500 ${hoveredProject === project.id ? 'scale-105' : 'scale-100'}`}
+                  />
+                )}
 
-                {/* Floating elements */}
-                <div className={`absolute top-4 right-4 w-20 h-20 bg-white/10 rounded-full blur-xl transition-transform duration-700 ${hoveredProject === project.id ? 'scale-150' : 'scale-100'}`} />
-                <div className={`absolute bottom-4 left-4 w-16 h-16 bg-primary-400/20 rounded-full blur-lg transition-transform duration-700 ${hoveredProject === project.id ? 'scale-150' : 'scale-100'}`} />
-
-                {/* Project initial */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <span className={`text-6xl font-bold text-white/20 transition-transform duration-500 ${hoveredProject === project.id ? 'scale-110' : 'scale-100'}`}>
-                    {project.title.charAt(0)}
-                  </span>
-                </div>
+                {/* Overlay for better text visibility */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-black/30" />
 
                 {/* Period badge */}
                 {project.period && (
-                  <div className="absolute top-4 left-4 px-3 py-1 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">
+                  <div className="absolute top-4 left-4 px-3 py-1 bg-black/30 backdrop-blur-sm rounded-full text-white text-xs font-medium z-10">
                     {project.period}
                   </div>
                 )}
 
                 {/* Status indicator */}
                 {project.status && (
-                  <div className="absolute top-4 right-4 flex items-center gap-2 px-3 py-1 bg-green-500/20 backdrop-blur-sm rounded-full">
+                  <div className="absolute top-4 right-4 flex items-center gap-2 px-3 py-1 bg-green-500/30 backdrop-blur-sm rounded-full z-10">
                     <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
                     <span className="text-white text-xs font-medium">{project.status}</span>
                   </div>
@@ -94,14 +91,24 @@ export default function Projects() {
               </div>
 
               {/* Project content */}
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-sacramento-700 transition-colors">
+              <div className="p-6 overflow-hidden flex-grow flex flex-col">
+                <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-sacramento-700 transition-colors break-words">
                   {project.title}
                 </h3>
 
-                <p className="text-gray-600 mb-5 leading-relaxed line-clamp-3">
-                  {project.description}
-                </p>
+                <div className="mb-5 min-w-0">
+                  <p className={`text-gray-600 leading-relaxed break-words ${expandedProject === project.id ? '' : 'line-clamp-3'}`}>
+                    {project.description}
+                  </p>
+                  {project.description.length > 150 && (
+                    <button
+                      onClick={() => setExpandedProject(expandedProject === project.id ? null : project.id)}
+                      className="text-sacramento-600 hover:text-sacramento-700 text-sm font-medium mt-2 transition-colors"
+                    >
+                      {expandedProject === project.id ? 'Read less' : 'Read more'}
+                    </button>
+                  )}
+                </div>
 
                 {/* Tech stack */}
                 <div className="flex flex-wrap gap-2 mb-5">
@@ -118,7 +125,7 @@ export default function Projects() {
                 </div>
 
                 {/* Action links */}
-                <div className="flex items-center gap-4">
+                <div className="flex flex-wrap items-center gap-3 mt-auto pt-2">
                   {project.website && (
                     <a
                       href={project.website}

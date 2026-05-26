@@ -5,7 +5,7 @@
     "description": "Architecting a full-stack funding workflow platform projected to eliminate 250+ hours of manual processing annually by digitizing 500+ departmental submissions. Engineered relational data models with Prisma ORM and MongoDB to manage funding requests, multi-stage approval states, and full revision history with end-to-end type safety. Built a tokenized, email-based approval system via Resend, enabling asynchronous multi-reviewer workflows. Enforced strict runtime data validation using Zod schemas.",
     "tech": ["Next.js", "TypeScript", "Prisma ORM", "MongoDB", "Resend", "Zod"],
     "status": "In Progress",
-    "image": "/images/uc-davis-internal-medicine.jpg",
+    "image": "/images/fs.png",
     "featured": true,
     "period": "Jan 2026 - Present"
   },
@@ -45,17 +45,18 @@
     "description": "Built and deployed a responsive client website using React and Tailwind CSS. Improved client visibility and customer inquiries by 40% through optimized design. Applied efficient communication and design iteration with the client and teammate.",
     "tech": ["React", "Tailwind CSS", "Frontend Development", "TypeScript"],
     "website": "https://tgld.org",
-    "image": "/images/top-garden.jpg",
+    "image": "/images/tgld.png",
     "featured": true,
     "period": "Dec 2024 - Apr 2025"
   },
   {
     "id": 6,
-    "title": "Retina Risk — VisionWatch",
-    "description": "Built a predictive healthcare system at UC Davis Health Hackathon identifying glaucoma and diabetic patients at elevated risk for acute care events within 12 months. Developed a calibrated Random Forest model achieving AUROC 0.718 on 3,572 held-out patients. Created an innovative 3D retinal visualization interface using Three.js where each node represents a patient cohort, positioned by disease burden and colored by predicted risk, enabling clinicians to explore subgroups interactively.",
-    "tech": ["Python", "React", "Three.js", "Vite", "Machine Learning", "Databricks"],
+    "title": "Retina Risk — HACKATHON WINNER",
+    "description": "Best Predictive Model: Built a predictive healthcare system at UC Davis Health Hackathon identifying glaucoma and diabetic patients as well as other cohorts at elevated risk for acute care events within 12 months. Developed a calibrated Random Forest model achieving AUROC 0.718 on 3,572 held-out patients. Created an innovative 3D retinal visualization interface using Three.js where each node represents a patient cohort, positioned by disease burden and colored by predicted risk, enabling clinicians to explore subgroups interactively.",
+    "tech": ["Python", "React", "Three.js", "Vite", "Machine Learning", "Databricks", "SQL"],
     "github": "https://github.com/bdunguyen/MedXEng2026",
-    "image": "/images/visionwatch.jpg",
+    "website": "https://retinarisk.vercel.app/",
+    "image": "/images/rr.png",
     "featured": true,
     "period": "May 2026"
   }

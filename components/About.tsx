@@ -30,7 +30,7 @@ export default function About() {
           {/* Main content grid */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             {/* Left column - Photo and quick info */}
-            <div className="lg:col-span-4 flex flex-col items-center lg:items-start">
+            <div className="lg:col-span-4 flex flex-col items-center text-center lg:text-left lg:items-start mx-auto lg:mx-0">
               <div className="relative group">
                 <div className="absolute -inset-1 bg-gradient-to-r from-sacramento-500 to-primary-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-500" />
                 <div className="relative w-56 h-56 rounded-2xl overflow-hidden ring-4 ring-white shadow-2xl">
@@ -43,14 +43,14 @@ export default function About() {
               </div>
 
               {/* Interest badges */}
-              <div className="mt-8 grid grid-cols-2 gap-3 w-full max-w-xs">
+              <div className="mt-8 grid grid-cols-2 gap-3 w-full max-w-[280px]">
                 {interests.map((interest) => (
                   <div
                     key={interest.label}
-                    className="flex items-center gap-2 px-4 py-3 bg-gray-50 rounded-xl border border-gray-100 hover:border-sacramento-200 hover:bg-sacramento-50 transition-all duration-200"
+                    className="flex items-center gap-2 px-3 py-3 bg-gray-50 rounded-xl border border-gray-100 hover:border-sacramento-200 hover:bg-sacramento-50 transition-all duration-200 min-w-0"
                   >
-                    <span className="text-xl">{interest.icon}</span>
-                    <span className="text-sm font-medium text-gray-700">{interest.label}</span>
+                    <span className="text-xl flex-shrink-0">{interest.icon}</span>
+                    <span className="text-xs sm:text-sm font-medium text-gray-700 truncate">{interest.label}</span>
                   </div>
                 ))}
               </div>

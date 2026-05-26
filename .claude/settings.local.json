@@ -6,7 +6,10 @@
       "Bash(git commit:*)",
       "Bash(git push)",
       "Bash(npm run build:*)",
-      "Bash(git clone:*)"
+      "Bash(git clone:*)",
+      "Bash(dir:*)",
+      "Bash(git pull:*)",
+      "Bash(git stash:*)"
     ]
   }
 }

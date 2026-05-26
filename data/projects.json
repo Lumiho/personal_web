@@ -24,7 +24,7 @@
     "title": "MuscleMax Startup",
     "description": "Spearheading development of a cross-platform fitness app integrating a custom EMG device to deliver real-time muscle activity insights. Designed and implemented a BLE communication layer using react-native-ble-plx, enabling low-latency data streaming from proprietary hardware. Architected a real-time data pipeline with SQLite and Node.js to support live EMG signal graphing and persistent session history. Directing a 5-person cross-functional team across software, hardware, and business.",
     "tech": ["React Native", "TypeScript", "SQLite", "Node.js", "BLE", "EMG Hardware"],
-    "github": "https://github.com/Lumiho",
+    "status": "Contact for Access",
     "image": "/images/musclemax.jpg",
     "featured": true,
     "period": "Jan 2025 - Present"
@@ -48,6 +48,16 @@
     "image": "/images/top-garden.jpg",
     "featured": true,
     "period": "Dec 2024 - Apr 2025"
+  },
+  {
+    "id": 6,
+    "title": "Retina Risk — VisionWatch",
+    "description": "Built a predictive healthcare system at UC Davis Health Hackathon identifying glaucoma and diabetic patients at elevated risk for acute care events within 12 months. Developed a calibrated Random Forest model achieving AUROC 0.718 on 3,572 held-out patients. Created an innovative 3D retinal visualization interface using Three.js where each node represents a patient cohort, positioned by disease burden and colored by predicted risk, enabling clinicians to explore subgroups interactively.",
+    "tech": ["Python", "React", "Three.js", "Vite", "Machine Learning", "Databricks"],
+    "github": "https://github.com/bdunguyen/MedXEng2026",
+    "image": "/images/visionwatch.jpg",
+    "featured": true,
+    "period": "May 2026"
   }
 ]
 

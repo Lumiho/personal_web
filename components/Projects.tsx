@@ -28,6 +28,10 @@ const categoryColors: Record<string, string> = {
   'Prisma': 'bg-indigo-100 text-indigo-700',
   'Tailwind CSS': 'bg-cyan-100 text-cyan-700',
   'React Native': 'bg-purple-100 text-purple-700',
+  'Three.js': 'bg-emerald-100 text-emerald-700',
+  'Vite': 'bg-violet-100 text-violet-700',
+  'Machine Learning': 'bg-rose-100 text-rose-700',
+  'Databricks': 'bg-red-100 text-red-700',
 }
 
 export default function Projects() {
@@ -142,12 +146,24 @@ export default function Projects() {
                     </a>
                   )}
                   {!project.website && !project.github && project.status && (
-                    <span className="inline-flex items-center gap-2 text-sacramento-600 text-sm font-medium">
-                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                      </svg>
-                      {project.status}
-                    </span>
+                    project.status === 'Contact for Access' ? (
+                      <a
+                        href="#contact"
+                        className="inline-flex items-center gap-2 px-4 py-2 bg-sacramento-100 text-sacramento-700 rounded-lg text-sm font-medium hover:bg-sacramento-200 transition-colors"
+                      >
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" />
+                        </svg>
+                        Contact for Access
+                      </a>
+                    ) : (
+                      <span className="inline-flex items-center gap-2 text-sacramento-600 text-sm font-medium">
+                        <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        {project.status}
+                      </span>
+                    )
                   )}
                 </div>
               </div>

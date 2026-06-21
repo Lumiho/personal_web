@@ -59,6 +59,16 @@
     "image": "/images/rr.png",
     "featured": true,
     "period": "May 2026"
+  },
+  {
+    "id": 7,
+    "title": "Resonance — Violin Practice Trainer",
+    "description": "Built an interactive web-based violin practice tool featuring real-time pitch detection and visual feedback. Designed an elegant, dark-themed UI with a warm aesthetic inspired by vintage instruments. Helps musicians improve intonation through intuitive practice sessions.",
+    "tech": ["JavaScript", "Web Audio API", "CSS"],
+    "github": "https://github.com/Lumiho/violin_app",
+    "image": "/images/resonance.png",
+    "featured": true,
+    "period": "2026"
   }
 ]
 

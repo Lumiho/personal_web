@@ -52,7 +52,7 @@ export default function Navigation() {
             onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             className="flex-shrink-0 text-xl font-bold gradient-text"
           >
-            Leo Zavala
+            Leonardo Zavala-Jimenez
           </button>
           <div className="hidden md:flex items-center gap-1">
             {navItems.map((item) => (

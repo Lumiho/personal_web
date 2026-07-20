@@ -60,8 +60,8 @@ export default function Hero() {
               Open to full-time software engineering roles · U.S. citizen, no sponsorship required
             </span>
           </div>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold mb-6 text-gray-900">
-            Leo <span className="gradient-text">Zavala</span>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
+            Leonardo <span className="gradient-text">Zavala-Jimenez</span>
           </h1>
           <p className="text-xl sm:text-2xl text-gray-800 font-semibold mb-4">
             Software Engineer · UC Davis Computer Science, Class of 2026

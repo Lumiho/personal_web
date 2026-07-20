@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://lzj-web.vercel.app'),
-  title: 'Leo Zavala — Software Engineer',
+  title: 'Leonardo Zavala-Jimenez — Software Engineer',
   description:
     'Software engineer and UC Davis CS graduate (2026). Production full-stack applications with Next.js, TypeScript, and Microsoft Azure; real-time data pipelines; cross-functional team leadership.',
   keywords: [
@@ -21,11 +21,11 @@ export const metadata: Metadata = {
     'Azure',
   ],
   openGraph: {
-    title: 'Leo Zavala — Software Engineer',
+    title: 'Leonardo Zavala-Jimenez — Software Engineer',
     description:
       'Software engineer and UC Davis CS graduate (2026). Production full-stack applications, cloud deployment on Azure, and real-time data pipelines.',
     url: 'https://lzj-web.vercel.app',
-    siteName: 'Leo Zavala',
+    siteName: 'Leonardo Zavala-Jimenez',
     type: 'website',
   },
 }

@@ -6,8 +6,28 @@ import Navigation from '@/components/Navigation'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Leo Zavala - Portfolio',
-  description: 'UC Davis CS + Statistics student building intelligent systems that connect AI, data, and hardware.',
+  metadataBase: new URL('https://lzj-web.vercel.app'),
+  title: 'Leo Zavala — Software Engineer',
+  description:
+    'Software engineer and UC Davis CS graduate (2026). Production full-stack applications with Next.js, TypeScript, and Microsoft Azure; real-time data pipelines; cross-functional team leadership.',
+  keywords: [
+    'Leo Zavala',
+    'Leonardo Zavala-Jimenez',
+    'software engineer',
+    'UC Davis',
+    'full-stack developer',
+    'Next.js',
+    'TypeScript',
+    'Azure',
+  ],
+  openGraph: {
+    title: 'Leo Zavala — Software Engineer',
+    description:
+      'Software engineer and UC Davis CS graduate (2026). Production full-stack applications, cloud deployment on Azure, and real-time data pipelines.',
+    url: 'https://lzj-web.vercel.app',
+    siteName: 'Leo Zavala',
+    type: 'website',
+  },
 }
 
 export default function RootLayout({
@@ -24,4 +44,3 @@ export default function RootLayout({
     </html>
   )
 }
-

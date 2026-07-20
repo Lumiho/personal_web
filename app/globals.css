@@ -5,13 +5,14 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
   }
-  
+
   body {
-    @apply bg-gray-50 text-gray-900;
+    @apply bg-gray-50 text-gray-900 antialiased;
     position: relative;
   }
-  
+
   body::before {
     content: '';
     position: fixed;
@@ -23,13 +24,13 @@
       90deg,
       transparent,
       transparent 48px,
-      rgba(4, 57, 39, 0.15) 48px,
-      rgba(4, 57, 39, 0.15) 50px
+      rgba(4, 57, 39, 0.08) 48px,
+      rgba(4, 57, 39, 0.08) 50px
     );
     pointer-events: none;
     z-index: 0;
   }
-  
+
   body::after {
     content: '';
     position: fixed;
@@ -51,27 +52,31 @@
 
 @layer components {
   .section-container {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20;
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24;
   }
-  
-  .section-title {
-    @apply text-3xl sm:text-4xl font-bold text-gray-900 mb-8 text-center;
-  }
-  
+
   .gradient-text {
     @apply bg-gradient-to-r from-sacramento-700 to-sacramento-500 bg-clip-text text-transparent;
   }
-  
-  .scroll-dot-1 {
-    animation-delay: 0s;
+
+  .reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition:
+      opacity 0.6s ease-out,
+      transform 0.6s ease-out;
   }
-  
-  .scroll-dot-2 {
-    animation-delay: 0.2s;
+
+  .reveal-visible {
+    opacity: 1;
+    transform: none;
   }
-  
-  .scroll-dot-3 {
-    animation-delay: 0.4s;
+
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
   }
 }
-

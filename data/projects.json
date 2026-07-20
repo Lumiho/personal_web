@@ -26,6 +26,7 @@
     ],
     "tech": ["Swift", "SwiftUI", "Combine", "Python", "XCTest"],
     "github": "https://github.com/nathancbao/Orbit",
+    "image": "/images/Orbit.png",
     "featured": true,
     "period": "2026"
   },
@@ -39,7 +40,7 @@
       "Robust async error handling in a modular, testable architecture"
     ],
     "tech": ["Rust", "Redis", "REST API", "SOLID Principles"],
-    "github": "https://github.com/Lumiho",
+    "note": "Code available on request",
     "featured": true,
     "period": "Sept 2025 – Nov 2025"
   },

@@ -1,6 +1,36 @@
 [
   {
     "id": 1,
+    "title": "Retina Risk",
+    "role": "Hackathon Winner — Best Predictive Model",
+    "description": "Predictive healthcare system built at the UC Davis Health Hackathon, identifying glaucoma and diabetic patients at elevated risk of acute care events within 12 months.",
+    "highlights": [
+      "Calibrated Random Forest model achieving AUROC 0.718 on 3,572 held-out patients",
+      "Interactive 3D retinal visualization in Three.js — patient cohorts positioned by disease burden and colored by predicted risk, letting clinicians explore subgroups"
+    ],
+    "tech": ["Python", "Machine Learning", "Databricks", "React", "Three.js", "SQL"],
+    "github": "https://github.com/bdunguyen/MedXEng2026",
+    "website": "https://retinarisk.vercel.app/",
+    "image": "/images/rr.png",
+    "featured": true,
+    "period": "May 2026"
+  },
+  {
+    "id": 2,
+    "title": "Orbit",
+    "role": "iOS App",
+    "description": "A social activity discovery platform for college students with a galaxy-themed UI, built in SwiftUI.",
+    "highlights": [
+      "Reactive state management with Combine across activity discovery, real-time group chat, and structured voting for coordinating hangouts",
+      "Unit-tested with XCTest"
+    ],
+    "tech": ["Swift", "SwiftUI", "Combine", "Python", "XCTest"],
+    "github": "https://github.com/nathancbao/Orbit",
+    "featured": true,
+    "period": "2026"
+  },
+  {
+    "id": 3,
     "title": "GitHub Data Fetcher",
     "role": "Rust CLI Tool",
     "description": "A modular Rust CLI that interfaces with the GitHub REST API to retrieve repository and issue metadata, built with SOLID principles, object-oriented design, and asynchronous programming.",
@@ -8,13 +38,43 @@
       "Cached structured JSON in Redis, reducing API calls by 80% and improving query efficiency",
       "Robust async error handling in a modular, testable architecture"
     ],
-    "tech": ["Rust", "Redis", "REST API", "Async Programming"],
+    "tech": ["Rust", "Redis", "REST API", "SOLID Principles"],
     "github": "https://github.com/Lumiho",
     "featured": true,
     "period": "Sept 2025 – Nov 2025"
   },
   {
-    "id": 2,
+    "id": 4,
+    "title": "Resonance",
+    "role": "Violin Practice Trainer",
+    "description": "An interactive web-based violin practice tool featuring real-time pitch detection and visual feedback.",
+    "highlights": [
+      "Real-time pitch detection built on the Web Audio API, helping musicians improve intonation",
+      "Elegant dark-themed UI with a warm aesthetic inspired by vintage instruments"
+    ],
+    "tech": ["JavaScript", "Web Audio API", "CSS"],
+    "github": "https://github.com/Lumiho/violin_app",
+    "image": "/images/resonance.png",
+    "featured": true,
+    "period": "2026"
+  },
+  {
+    "id": 5,
+    "title": "Top Garden Landscaping & Design",
+    "role": "Freelance Front-End Developer",
+    "description": "A 5-page responsive client website built with React and Tailwind CSS, deployed on Vercel for a local landscaping business.",
+    "highlights": [
+      "Increased client visibility and customer inquiries by 40% within 3 months through SEO and responsive design",
+      "Led weekly design iterations with client stakeholders, reducing revision time by 25%"
+    ],
+    "tech": ["React", "TypeScript", "Tailwind CSS", "Vercel"],
+    "website": "https://tgld.org",
+    "image": "/images/tgld.png",
+    "featured": true,
+    "period": "Dec 2024 – Apr 2025"
+  },
+  {
+    "id": 6,
     "title": "Data Blog",
     "role": "Data Analysis & Writing",
     "description": "End-to-end data analyses on public datasets (sleep, income, health) with 10K–100K records, published as a live blog.",
@@ -26,19 +86,5 @@
     "website": "https://data-analysis-blog.vercel.app/",
     "featured": true,
     "period": "Mar 2025 – Present"
-  },
-  {
-    "id": 3,
-    "title": "Top Garden Landscaping & Design",
-    "role": "Freelance Front-End Developer",
-    "description": "A 5-page responsive client website built with React and Tailwind CSS, deployed on Vercel for a local landscaping business.",
-    "highlights": [
-      "Increased client visibility and customer inquiries by 40% within 3 months through SEO and responsive design",
-      "Led weekly design iterations with client stakeholders, reducing revision time by 25%"
-    ],
-    "tech": ["React", "Tailwind CSS", "Vercel", "SEO"],
-    "website": "https://tgld.org",
-    "featured": true,
-    "period": "Dec 2024 – Apr 2025"
   }
 ]

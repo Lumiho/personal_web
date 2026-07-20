@@ -42,7 +42,7 @@ export default function Projects() {
                 )}
                 <div className="flex flex-col flex-1 p-6">
                   <div className="mb-3">
-                    <div className="flex items-start justify-between gap-3 mb-1">
+                    <div className="flex flex-wrap items-start justify-between gap-x-3 gap-y-1 mb-1">
                       <h3 className="text-xl font-bold text-gray-900">
                         {project.title}
                       </h3>
